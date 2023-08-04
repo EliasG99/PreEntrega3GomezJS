@@ -1,6 +1,6 @@
 let montoAcumulado = parseFloat(localStorage.getItem('montoAcumulado')) || 0;
 let saldoSos = parseFloat(localStorage.getItem("saldoSos")) || 0;
-
+let deudaSos = parseFloat(localStorage.getItem("deudaSos")) || 0;
 let selectedImageUrl = "";
 
 
