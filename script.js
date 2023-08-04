@@ -1,6 +1,5 @@
 let montoAcumulado = parseFloat(localStorage.getItem('montoAcumulado')) || 0;
 let saldoSos = parseFloat(localStorage.getItem("saldoSos")) || 0;
-let deudaSos = parseFloat(localStorage.getItem("deudaSos")) || 0;
 let selectedImageUrl = "";
 
 
@@ -73,7 +72,7 @@ function guardarDatosTitular(){
     //   alert(`Recarga Exitosa. Usted recargo $ : ${montoAcumulado}`);
         localStorage.setItem('montoAcumulado', montoAcumulado.toString());
     
-    deudaSos = deudaSos - montoAcumulado;
+
       const recargaExitosaMessage = document.getElementById('recargaExitosa');
       recargaExitosaMessage.classList.remove('hidden');
       document.getElementById('monto').value = '';
@@ -103,7 +102,7 @@ function consultarSaldo(){
 
     } else {
 
-        resultadoDiv.innerHTML = `<p> Saldo: ${montoAcumulado - deudaSos}</p>
+        resultadoDiv.innerHTML = `<p> Saldo: ${montoAcumulado}</p>
                                  <p> Debe: ${saldoSos*500  }</p>`;
     }
  
