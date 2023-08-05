@@ -145,7 +145,7 @@ function recargaSos(){
 
     localStorage.setItem("saldoSos", saldoSos.toString())
     localStorage.setItem('montoAcumulado', montoAcumulado.toString());
-    localStorage.setItem("deudaSos", deudaSos.toString())
+   
 
     resultadoDiv.innerHTML = "<p>Se acreditaron 500$</p>"
 
